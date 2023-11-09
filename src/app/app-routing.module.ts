@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AllProductsComponent } from './products/components/all-products/AllProductsComponent';
+import { AllProductsComponent } from './products/components/all-products/all-products.component';
 import { ProductsDetailsComponent } from './products/components/products-details/products-details.component';
-import { CartComponent } from './carts/component/cart/cart.component';
+import { CartComponent } from './carts/components/cart/cart.component';
 
 /* The AppRoutingModule class defines the routes for different components in a TypeScript application. */
 const routes: Routes = [
   { path: 'products', component: AllProductsComponent },
-  { path: 'details', component: ProductsDetailsComponent },
+  { path: 'details/:id', component: ProductsDetailsComponent },
   { path: 'cart', component: CartComponent },
   { path: '**', redirectTo: 'products', pathMatch: 'full' },
 ];
