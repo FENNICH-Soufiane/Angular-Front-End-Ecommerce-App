@@ -18,7 +18,6 @@ import { CartsModule } from './carts/carts.module';
     SharedModule,
     CommonModule,
     ProductsModule,
-    CartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
